@@ -119,3 +119,25 @@ function counter(){
 // Function as first-class function mean treated like values - pass/store and return.
 
 // Function are first class citizen of javaScript as it is treated like variables/values it can pass/store and return it. 
+
+
+
+// Closure
+
+// Inner or nested function can access outer function properties in other terms inner function can access lexical environment in which inner function is declared.
+
+function counter(){
+    let counter=0;
+    function inc(){
+       return counter++
+    }
+    return inc
+}
+
+let res = counter()
+console.log(res(),"=====================")
+console.log(res(),"=====================")
+console.log(res(),"=====================")
+console.log(res(),"=====================")
+console.log(res(),"=====================")
+console.log(res(),"=====================")
